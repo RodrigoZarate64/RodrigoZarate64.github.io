@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Personal Page</title>
+	<style>
+		body {
+			background-color: lightslategray;
+		}
+		header {
+			background-color: white;
+            color: blue;
+		}
+        pre {
+            font-weight: bold;
+        }
+        res {
+            font-style: italic;
+        }
+        h2 {
+            font-family: Verdana;
+        }
+        tr {
+        background-color: darkcyan;
+        font-size:24px;
+        }
+        tr:nth-child(even) {
+        background-color: cadetblue;
+        font-size:24px
+        }
+        table {
+            border: 2px solid rgb(1, 0, 82);
+            margin: 30px;
+            width: 300px;
+            border-spacing:5px;
+        }
+
+        input {
+            height: 50px;
+            width: 100px; 
+            font-size: 20px;
+            border: 2px solid blue;
+        }
+
+        button {
+            height: 50px;
+            width: 100px;
+            font-size: 20px;
+            border: 2px solid red;
+        }
+	</style>
+
+    <header>    
+        <h1> Personal Page Info </h1>
+    </header>
+
+    <main>
+        
+        <h2> Name:<res> Rodrigo </res> </h2>
+        <h2> Major:<res> 5th </res> </h2>
+        <h2> Year of University Enrollment:<res> 2020 </res> </h2>
+        <h2> My Github link: <a href="https://github.com/RodrigoZarate64">click here</a>
+        <h2> Personal Summary:<res> student of the "Universidad de los Andes", studing programming sciences, </br> plays the music instrument bassoon, plays voleyball and skate. </res> </h2>
+
+        <table>
+            <tr>
+              <td><pre>Skill</pre></td>
+              <td><pre>Level</pre></td>
+            </tr>
+            <tr >
+                <td>Python</td>
+                <td>Advance</td>
+              </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>HTML/CSS</td>
+                <td>Basic</td>
+              </tr>
+            <tr>
+              <td>Git</td>
+              <td>Intermediate</td>
+            <tr>
+              <td>Excel</td>
+              <td>Basic</td>
+            </tr>
+            <tr>
+                <td>SQL</td>
+                <td>intermediate</td>
+              </tr>
+            <tr>
+              <td>Ruby</td>
+              <td>None</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>Intermediate</td>
+              </tr>
+              <tr>
+                <td>Spanish</td>
+                <td>Native</td>
+              </tr>
+          </table>
+
+
+        <div id="ingreso">
+        <input type="text" value=" texto" id="textoEnviado">
+        <button>Enviar</button>
+        </div>
+        <div id="salida"></div>
+
+        <script>
+        const texto = document.getElementById("textoEnviado");    
+        const boton = document.querySelector("button");
+
+        boton.addEventListener("click",function() {
+            const elemento= document.createElement("p");
+            elemento.textContent = texto.value;
+            document.getElementById("salida").appendChild(elemento);
+        });
+        </script>
+
+    </main>
+    
+</head>
+<body>
