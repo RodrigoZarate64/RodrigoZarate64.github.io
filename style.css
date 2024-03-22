@@ -1,0 +1,66 @@
+.title-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color:
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+body {
+    background-color: dimgray;
+}
+
+header {
+    background-color: white;
+    color: blue;
+}
+
+pre {
+    font-weight: bold;
+}
+
+res {
+    font-style: italic;
+}
+
+h2 {
+    font-family: Verdana;
+}
+
+tr {
+    background-color: darkcyan;
+    font-size: 24px;
+}
+
+tr:nth-child(even) {
+    background-color: cadetblue;
+    font-size: 24px;
+}
+
+table {
+    border: 2px solid rgb(1, 0, 82);
+    margin: 30px;
+    width: 300px;
+    border-spacing: 5px;
+}
+
+input {
+    height: 50px;
+    width: 100px; 
+    font-size: 20px;
+    border: 2px solid blue;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    border: 2px solid red;
+}
+
+@media (max-width: 767px) {
+ 
+    body {
+        font-size: 14px; 
+    }
+}
